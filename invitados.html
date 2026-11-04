@@ -37,6 +37,10 @@ a{color:var(--aqua)}
 .hero img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover;opacity:.62}
 .hero .over{position:absolute;inset:auto 0 0 0;padding-block:28px;background:linear-gradient(to top,rgba(17,17,17,.92),rgba(17,17,17,0))}
 .hero .eyebrow{color:#FF9A82}
+.hero-badge{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:8px}
+.hb-main{display:inline-block;background:#AE1800;color:#FFFFFF;font-family:var(--display);font-weight:400;font-size:clamp(17px,3.6vw,24px);letter-spacing:.06em;text-transform:uppercase;line-height:1;padding:9px 14px 8px;border-radius:6px;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.hb-sub{display:inline-block;background:#FFFFFF;color:#AE1800;font-family:var(--display);font-weight:400;font-size:clamp(17px,3.6vw,24px);letter-spacing:.06em;text-transform:uppercase;line-height:1;padding:9px 14px 8px;border-radius:6px;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+@media (max-width:600px){.hero img{height:470px;max-height:none}.hb-main,.hb-sub{font-size:16px;padding:8px 11px 7px}}
 .hero h1{font-size:clamp(40px,9vw,76px);letter-spacing:-.01em;margin-top:6px;color:#fff}
 .hero .sub{font-size:18px;margin-top:8px;color:#E6E6E6;max-width:52ch}
 .hero .spons{margin-top:14px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C9C9C9}
@@ -171,7 +175,7 @@ body.locked{overflow:hidden}
 <header class="hero">
   <img id="heroimg" alt="Avenida llena de patinadores durante el Mega PatinDay 2025" src="invitados-mega.jpg">
   <div class="over"><div class="wrap">
-    <div class="eyebrow">Invitación especial · Referentes de la comunidad roller</div>
+    <div class="hero-badge"><span class="hb-main">Invitación especial</span><span class="hb-sub">Referentes de la comunidad roller</span></div>
     <h1>Mega PatinDay 25 años</h1>
     <p class="sub">Queremos que estés. Sábado 21 de noviembre, Rosedal de Palermo.</p>
     <div class="spons">Sponsor oficial <b>ROADSHOW</b> · de la mano de Universo Sobre Ruedas</div>
