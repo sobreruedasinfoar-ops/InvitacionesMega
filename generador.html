@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Generador de invitaciones</title>
+<style>
+body{margin:0;background:#0E151B;color:#E8F0F3;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.w{max-width:620px;margin:0 auto;padding:32px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:16px}
+h1{margin:0;font-size:26px}label{font-weight:700;display:flex;flex-direction:column;gap:6px}
+textarea{font:inherit;min-height:160px;padding:12px;border-radius:10px;border:1px solid #2A3946;background:#16212A;color:inherit}
+ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+li{background:#16212A;border:1px solid #2A3946;border-radius:10px;padding:10px 12px;display:flex;gap:10px;align-items:center;justify-content:space-between}
+li span{min-width:0;overflow-wrap:anywhere;font-size:14px}li b{display:block;font-size:15px}
+button{font:inherit;font-weight:700;border:0;border-radius:999px;padding:8px 14px;background:#3CC6E0;color:#06141A;cursor:pointer;flex:none}
+p{margin:0;color:#9AAAB4;font-size:14px}
+</style></head><body><div class="w">
+<h1>Generador de invitaciones</h1>
+<p>Escribí un nombre por línea y copiá el link de cada invitado.</p>
+<label for="names">Invitados<textarea id="names" placeholder="Juan Pérez&#10;Laura Gómez"></textarea></label>
+<ul id="out"></ul>
+</div>
+<script>
+var base=location.href.replace(/generador\.html.*$/,"invitados.html");
+var ta=document.getElementById("names"),out=document.getElementById("out");
+function render(){out.innerHTML="";ta.value.split("\n").map(function(x){return x.trim()}).filter(Boolean).forEach(function(n){
+  var url=base+"?para="+encodeURIComponent(n),li=document.createElement("li"),sp=document.createElement("span"),b=document.createElement("b"),bt=document.createElement("button");
+  b.textContent=n;sp.appendChild(b);sp.appendChild(document.createTextNode(url));bt.textContent="Copiar";
+  bt.onclick=function(){navigator.clipboard.writeText(url).then(function(){bt.textContent="Copiado"}).catch(function(){bt.textContent="Copialo a mano"})};
+  li.appendChild(sp);li.appendChild(bt);out.appendChild(li);});}
+ta.addEventListener("input",render);
+</script></body></html>

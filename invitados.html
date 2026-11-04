@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Invitación especial de Roadshow a referentes de la comunidad roller para el Mega PatinDay 25 años.">
+<meta property="og:title" content="Invitación especial · Mega PatinDay 25 años">
+<meta property="og:description" content="Sábado 21 de noviembre · Rosedal de Palermo · Sponsor oficial Roadshow">
+<meta property="og:image" content="invitados-mega.jpg">
+<title>Invitados Mega PatinDay</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* Layout: una invitación de una sola columna, foto de asfalto arriba, "pase" de creador como pieza central, formulario abajo. */
+:root{
+  --bg:#F2F2F2; --surface:#FFFFFF; --ink:#222222; --muted:#5E5E5E; --line:#DCDCDC;
+  --aqua:#AE1800; --aqua-soft:#FBE4DF; --on-aqua:#FFFFFF; --ok:#1E7A4F;
+  --display:"Archivo Black","Arial Black",Impact,sans-serif;
+  --body:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#161616; --surface:#202020; --ink:#F0F0F0; --muted:#A8A8A8; --line:#333333;
+  --aqua:#D9301A; --aqua-soft:#3A1610; --on-aqua:#FFFFFF; --ok:#4CC28C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#161616; --surface:#202020; --ink:#F0F0F0; --muted:#A8A8A8; --line:#333333;
+  --aqua:#D9301A; --aqua-soft:#3A1610; --on-aqua:#FFFFFF; --ok:#4CC28C; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.02;text-wrap:balance;margin:0}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+a{color:var(--aqua)}
+
+/* hero */
+.hero{position:relative;background:#111111;color:#fff;overflow:hidden}
+.hero img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover;opacity:.62}
+.hero .over{position:absolute;inset:auto 0 0 0;padding-block:28px;background:linear-gradient(to top,rgba(17,17,17,.92),rgba(17,17,17,0))}
+.hero .eyebrow{color:#FF9A82}
+.hero h1{font-size:clamp(40px,9vw,76px);letter-spacing:-.01em;margin-top:6px;color:#fff}
+.hero .sub{font-size:18px;margin-top:8px;color:#E6E6E6;max-width:52ch}
+.hero .spons{margin-top:14px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C9C9C9}
+.hero .spons b{font-family:var(--display);font-weight:400;letter-spacing:.04em;color:#fff;font-size:14px}
+
+main{display:flex;flex-direction:column;gap:44px;padding-block:32px 56px}
+section{display:flex;flex-direction:column;gap:14px}
+section h2{font-size:clamp(26px,5vw,34px)}
+p{margin:0;max-width:62ch}
+
+/* ficha del evento */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+.facts div{padding:14px 10px 14px 0;min-width:0}
+.facts dt{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:4px 0 0;font-weight:700;font-variant-numeric:tabular-nums}
+@media (max-width:560px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* pase de creador */
+.pass{background:var(--aqua);color:var(--on-aqua);border-radius:18px;padding:22px;display:grid;grid-template-columns:1fr auto;gap:18px;position:relative}
+.pass::after{content:"";position:absolute;right:120px;top:0;bottom:0;border-left:2px dashed rgba(255,255,255,.5)}
+.pass h3{font-size:28px}
+.pass ul{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:6px}
+.pass li{padding-left:18px;position:relative}
+.pass li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;background:var(--on-aqua);border-radius:2px}
+.stub{width:96px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.stub strong{font-family:var(--display);font-weight:400;font-size:34px;letter-spacing:0;line-height:1}
+@media (max-width:520px){.pass{grid-template-columns:1fr}.pass::after{display:none}.stub{width:auto;flex-direction:row;gap:10px;border-top:2px dashed rgba(255,255,255,.5);padding-top:14px}}
+
+/* previa */
+.previa{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.previa-time{display:flex;flex-direction:column;align-items:center;text-align:center;gap:2px;padding:12px 14px;border-radius:10px;background:var(--aqua);color:var(--on-aqua);font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;min-width:96px}
+.previa-time strong{font-family:var(--display);font-weight:400;font-size:22px;letter-spacing:0;line-height:1.05;white-space:nowrap;text-transform:none}
+.previa h2{font-size:clamp(22px,4.5vw,28px)}
+.previa>div:last-child{display:flex;flex-direction:column;gap:10px;min-width:0}
+.previa-list{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+@media (max-width:520px){.previa{grid-template-columns:1fr}.previa-time{flex-direction:row;justify-content:center;gap:10px;min-width:0}}
+/* momentos */
+.guest{display:flex;flex-direction:column;gap:6px;padding:18px 0;border-top:1px solid var(--line)}
+.letter{font-size:18px;line-height:1.6;max-width:58ch}
+.letter p+p{margin-top:12px}
+.sign{font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:14px}
+.radio{display:flex;flex-wrap:wrap;gap:8px}
+.radio .chip input{position:absolute;opacity:0;width:1px;height:1px}
+.moments{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.moment{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;min-width:0}
+.moment .when{font-family:var(--mono);font-size:12px;color:var(--aqua);letter-spacing:.08em;text-transform:uppercase}
+.moment h3{font-size:20px;margin-top:6px}
+.moment p{font-size:14px;color:var(--muted);margin-top:6px}
+@media (max-width:620px){.moments{grid-template-columns:1fr}}
+
+.rules{display:flex;flex-direction:column;gap:8px;padding:0;margin:0;list-style:none}
+.rules li{display:flex;gap:10px;align-items:baseline}
+.rules li span{font-family:var(--mono);font-size:12px;color:var(--muted);flex:none;width:22px}
+
+/* formulario */
+form{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:560px){.row{grid-template-columns:1fr}}
+label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14px;min-width:0}
+label small{font-weight:400;color:var(--muted)}
+input,select,textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:11px 12px;width:100%}
+textarea{min-height:130px;resize:vertical}
+input:focus,select:focus,textarea:focus,button:focus-visible,.chip input:focus-visible+span{outline:3px solid var(--aqua);outline-offset:1px}
+fieldset{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+legend{font-weight:700;font-size:14px;padding:0;margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-block;padding:8px 13px;border:1px solid var(--line);border-radius:999px;font-size:14px;cursor:pointer;background:var(--bg)}
+.chip input:checked+span{background:var(--aqua-soft);border-color:var(--aqua);font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+button{font:inherit;font-weight:700;border:0;border-radius:999px;padding:13px 22px;cursor:pointer;background:var(--ink);color:var(--bg)}
+button.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+button[disabled]{opacity:.55;cursor:default}
+.status{font-size:14px;color:var(--muted)}
+.status.ok{color:var(--ok);font-weight:700}
+.note{font-size:13px;color:var(--muted)}
+
+/* panel organizadora */
+.admin{border-top:2px solid var(--ink);padding-top:18px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:680px;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+td.prop{max-width:280px}
+footer{border-top:1px solid var(--line);padding-block:20px 32px;font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.pass{animation:rise .5s ease-out both}@keyframes rise{from{transform:translateY(8px)}to{transform:none}}}
+
+/* regalo de entrada */
+.gift-intro{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;background:radial-gradient(circle at 50% 42%,#2B2B2B 0%,#111111 72%);color:#fff;text-align:center;padding:24px max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px));transition:opacity .7s ease .5s,visibility 0s linear 1.2s}
+.gift-intro .eyebrow{color:#FF9A82}
+.gift-intro h2{font-size:clamp(28px,7vw,44px);color:#fff}
+.gift-btn{background:none;border:0;padding:0;cursor:pointer;position:relative;width:220px;height:230px;color:inherit;border-radius:24px}
+.gift-btn:focus-visible{outline:3px solid #EE3A1E;outline-offset:8px}
+.g-box,.g-lid{position:absolute;left:50%;transform:translateX(-50%);background:#AE1800;border-radius:8px}
+.g-box{bottom:0;width:180px;height:140px;box-shadow:inset 0 -14px 0 rgba(0,0,0,.12)}
+.g-lid{bottom:136px;width:204px;height:46px;box-shadow:0 6px 0 rgba(0,0,0,.18);transition:transform .7s cubic-bezier(.3,1.4,.5,1)}
+.g-box::before,.g-lid::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:30px;transform:translateX(-50%);background:#F2F2F2}
+.g-bow{position:absolute;left:50%;bottom:178px;transform:translateX(-50%);width:110px;height:50px;transition:transform .7s cubic-bezier(.3,1.4,.5,1),opacity .4s}
+.g-bow::before,.g-bow::after{content:"";position:absolute;bottom:0;width:50px;height:42px;border:10px solid #F2F2F2;border-radius:50% 50% 8px 50%;box-sizing:border-box}
+.g-bow::before{left:2px;transform:rotate(-18deg)}
+.g-bow::after{right:2px;transform:scaleX(-1) rotate(-18deg)}
+.g-tag{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);font-family:var(--display);font-size:22px;color:#0B1A22;letter-spacing:.02em;white-space:nowrap}
+.g-glow{position:absolute;left:50%;bottom:120px;width:20px;height:20px;border-radius:50%;background:#FFD2C6;transform:translateX(-50%) scale(0);opacity:0;transition:transform .8s ease-out .15s,opacity .8s ease-out .15s;filter:blur(2px)}
+.gift-for{font-family:var(--display);font-size:clamp(22px,5.5vw,32px);color:#EE3A1E;margin-top:-16px;text-wrap:balance}
+.gift-thx{margin:0;max-width:30ch;font-size:17px;line-height:1.45;color:#E6E6E6;font-style:italic}
+.gift-intro.open .gift-thx{opacity:0;transition:opacity .3s}
+.gift-hint{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#C9C9C9}
+.gift-intro.open .g-lid{transform:translate(-50%,-150px) rotate(-14deg)}
+.gift-intro.open .g-bow{transform:translate(-50%,-160px) rotate(-14deg);opacity:0}
+.gift-intro.open .g-glow{transform:translateX(-50%) scale(30);opacity:.9}
+.gift-intro.open .gift-hint{opacity:0}
+.gift-intro.gone{opacity:0;visibility:hidden}
+body.locked{overflow:hidden}
+.hero h1:focus{outline:none}
+@media (prefers-reduced-motion:no-preference){.gift-btn:not(:disabled) .g-box,.gift-btn:not(:disabled) .g-lid{animation:wiggle 2.4s ease-in-out infinite}@keyframes wiggle{0%,80%,100%{rotate:0deg}84%{rotate:-4deg}88%{rotate:4deg}92%{rotate:-3deg}96%{rotate:2deg}}.gift-intro.open .g-box,.gift-intro.open .g-lid{animation:none}}
+@media (prefers-reduced-motion:reduce){.gift-intro,.g-lid,.g-bow,.g-glow{transition:opacity .2s}}
+</style>
+
+</head>
+<body class="locked">
+<div class="gift-intro" id="gift" role="dialog" aria-modal="true" aria-labelledby="gift-t">
+  <div class="eyebrow">Mega PatinDay 25 años · Roadshow</div>
+  <h2 id="gift-t">Invitación especial</h2>
+  <div class="gift-for" id="giftFor" hidden></div>
+  <button class="gift-btn" id="giftBtn" type="button" aria-label="Abrir la invitación">
+    <span class="g-glow"></span><span class="g-box"></span><span class="g-lid"></span><span class="g-bow"></span>
+  </button>
+  <p class="gift-thx">Gracias por fomentar el deporte y transmitirlo.</p>
+  <div class="gift-hint">Tocá el regalo para abrirla</div>
+</div>
+<header class="hero">
+  <img id="heroimg" alt="Avenida llena de patinadores durante el Mega PatinDay 2025" src="invitados-mega.jpg">
+  <div class="over"><div class="wrap">
+    <div class="eyebrow">Invitación especial · Referentes de la comunidad roller</div>
+    <h1>Mega PatinDay 25 años</h1>
+    <p class="sub">Queremos que estés. Sábado 21 de noviembre, Rosedal de Palermo.</p>
+    <div class="spons">Sponsor oficial <b>ROADSHOW</b> · de la mano de Universo Sobre Ruedas</div>
+  </div></div>
+</header>
+
+<main class="wrap">
+  <section aria-label="Invitación">
+    <div class="letter">
+      <p id="saludo" hidden style="font-weight:700"></p>
+      <p>Hace 25 años que la comunidad roller sale a la calle, y eso se construyó gracias a personas como vos: quienes enseñan, lideran escuelas, organizan grupos y contagian las ganas de patinar.</p>
+      <p>Por eso, desde Roadshow te invitamos formalmente a vivir el Mega PatinDay como invitado especial. Podés venir a patinar y disfrutar, o sumarte con tu propia propuesta en la previa.</p>
+      <div class="sign">El equipo de Universo Sobre Ruedas · Roadshow Argentina</div>
+    </div>
+  </section>
+
+  <section aria-labelledby="previa-h" class="previa">
+    <div class="previa-time"><span>Previa</span><strong>15 a 16 hs</strong><span>Rosedal</span></div>
+    <div>
+      <h2 id="previa-h">Tu espacio en la previa</h2>
+      <p>Durante la previa, de 15 a 16 hs, te invitamos a participar como quieras: hacer una demo, proponer una actividad o presentar tu escuela, tus salidas o tu comunidad frente a miles de patinadores.</p>
+      <ul class="previa-list">
+        <li>Demos de freestyle, slalom, dance o lo que hagas</li>
+        <li>Promoción de tu escuela, clases o salidas</li>
+        <li>Cualquier propuesta que sume al festejo</li>
+      </ul>
+      <p class="note">Es opcional. Contanos tu idea al confirmar y la coordinamos juntos.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="ev">
+    <div class="eyebrow" id="ev">El evento</div>
+    <dl class="facts">
+      <div><dt>Fecha</dt><dd>Sáb 21 de noviembre</dd></div>
+      <div><dt>Hora</dt><dd>15:00 previa</dd></div>
+      <div><dt>Lugar</dt><dd>Rosedal de Palermo</dd></div>
+      <div><dt>Público</dt><dd>3.000 a 4.000 patinadores</dd></div>
+    </dl>
+    <p>Dos salidas: la clásica de 15K por Santa Fe, Corrientes, el Obelisco, el Colón y Libertador, y la nueva Mini PatinDay de 5K. Organiza PatinEnLinea, que cumple 25 años sacando patinadores a la calle. Más info en <a href="https://www.megapatinday.online/" target="_blank" rel="noopener">megapatinday.online</a>.</p>
+  </section>
+
+  <section aria-labelledby="pase">
+    <h2 id="pase">Tu lugar en el Mega</h2>
+    <div class="pass">
+      <div>
+        <h3>Invitado Especial Roadshow</h3>
+        <ul>
+          <li>Recepción en el stand Roadshow durante la previa</li>
+          <li>Espacio de invitados para encontrarte con otros referentes</li>
+          <li>Salida junto al equipo Roadshow</li>
+          <li>Probá los rollers de la colección 2026</li>
+          <li>Un obsequio de bienvenida</li>
+        </ul>
+      </div>
+      <div class="stub"><span>Pase</span><strong>VIP</strong><span>21 · 11</span></div>
+    </div>
+    <p class="note">Presentate en el stand Roadshow al llegar al Rosedal con tu nombre.</p>
+  </section>
+
+  <section aria-labelledby="form-h" id="rsvp">
+    <h2 id="form-h">Confirmá tu presencia</h2>
+    <form id="f" novalidate>
+      <fieldset>
+        <legend>¿Venís al Mega?</legend>
+        <div class="radio">
+          <label class="chip"><input type="radio" name="asis" value="Voy" checked><span>Sí, voy</span></label>
+          <label class="chip"><input type="radio" name="asis" value="Tal vez"><span>Tal vez</span></label>
+          <label class="chip"><input type="radio" name="asis" value="No puedo"><span>No puedo esta vez</span></label>
+        </div>
+      </fieldset>
+      <div class="row">
+        <label for="nombre">Nombre y apellido<input id="nombre" name="nombre" required autocomplete="name"></label>
+        <label for="rol">Escuela, comunidad o rol<input id="rol" name="rol" placeholder="Ej: profe en Escuela X, líder de grupo"></label>
+      </div>
+      <div class="row">
+        <label for="ig">Instagram <small>(opcional)</small><input id="ig" name="ig" placeholder="@tuusuario"></label>
+        <label for="wa">WhatsApp<input id="wa" name="wa" inputmode="tel" placeholder="+54 9 11 ..."></label>
+      </div>
+      <div class="row">
+        <label for="acomp">Acompañantes<select id="acomp" name="acomp"><option>Voy solo/a</option><option>+1</option><option>+2</option></select></label>
+        <label for="salida">Salida que pensás hacer<select id="salida" name="salida"><option value="">Elegí</option><option>15K Patin Day</option><option>5K Mini PatinDay</option><option>Solo la previa</option><option>Todavía no sé</option></select></label>
+      </div>
+      <label for="previa">¿Querés sumarte en la previa (15 a 16 hs)?<select id="previa" name="previa"><option value="">No, voy a disfrutar</option><option>Sí, una demo</option><option>Sí, promocionar mi escuela o salidas</option><option>Sí, otra propuesta</option></select></label>
+      <label for="msg">Tu propuesta o mensaje <small>(opcional) Contanos qué te gustaría hacer en la previa o lo que quieras decirnos.</small><textarea id="msg" name="msg" placeholder="Ej: una demo de slalom de 5 minutos con mis alumnos"></textarea></label>
+      <div class="actions">
+        <button type="submit" id="send">Confirmar</button>
+        
+        <span class="status" id="status" role="status"></span>
+      </div>
+      <p class="note">Consultas: Sobreruedas.info.ar@gmail.com · +54 9 11 7824 2352</p>
+    </form>
+    <div class="pass" id="thanks" hidden><div><h3 id="thx-t">¡Confirmado!</h3><p id="thx-p" style="margin-top:8px">Te esperamos el sábado 21 de noviembre desde las 15 hs en el stand Roadshow del Rosedal. Presentate con tu nombre.</p></div><div class="stub"><span>Invitado</span><strong>VIP</strong><span>21 · 11</span></div></div>
+  </section>
+</main>
+
+<footer><div class="wrap">Mega PatinDay 2026 · un evento de PatinEnLinea · Sponsor oficial Roadshow · Contacto: Sobreruedas.info.ar@gmail.com · +54 9 11 7824 2352</div></footer>
+
+<script>
+(function(){
+  // Pegá acá la URL de la implementación de Apps Script (termina en /exec)
+  var SCRIPT_URL="https://script.google.com/macros/s/AKfycbxFwBnR4JDfligYfxmG-iN89PX9rt3Vj_gQyUJzc5GYY53nGVqVpC6-Sjc9YWtXSJdGTQ/exec";
+  var $=function(id){return document.getElementById(id)};
+  function v(id){return $(id).value.trim()}
+  $("f").addEventListener("submit",function(e){
+    e.preventDefault();
+    var st=$("status"), btn=$("send");
+    if(!v("nombre")){st.textContent="Completá tu nombre.";st.className="status";return;}
+    var a=(document.querySelector('input[name=asis]:checked')||{}).value||"";
+    var data=new URLSearchParams({nombre:v("nombre"),rol:v("rol"),asistencia:a,acompanantes:v("acomp"),salida:v("salida"),instagram:v("ig"),whatsapp:v("wa"),mensaje:(v("previa")?"[Previa: "+v("previa")+"] ":"")+v("msg")});
+    btn.disabled=true; st.textContent="Enviando…"; st.className="status";
+    fetch(SCRIPT_URL,{method:"POST",mode:"no-cors",body:data}).then(function(){
+      $("f").hidden=true;
+      if(a==="No puedo"){$("thx-t").textContent="¡Gracias por avisarnos!";$("thx-p").textContent="Te vamos a extrañar. Nos vemos en el próximo evento.";}
+      else if(a==="Tal vez"){$("thx-t").textContent="¡Gracias!";$("thx-p").textContent="Ojalá puedas venir. Si te decidís, te esperamos el sábado 21 desde las 15 hs en el stand Roadshow del Rosedal.";}
+      $("thanks").hidden=false; $("rsvp").scrollIntoView({behavior:"smooth",block:"start"});
+    }).catch(function(){
+      st.textContent="No se pudo enviar. Revisá tu conexión y probá de nuevo."; btn.disabled=false;
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var g=document.getElementById("gift"),b=document.getElementById("giftBtn");
+  function open(){
+    if(g.classList.contains("open"))return;
+    b.disabled=true; g.classList.add("open");
+    var fast=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+    setTimeout(function(){g.classList.add("gone");document.body.classList.remove("locked");},fast?150:900);
+    setTimeout(function(){g.hidden=true;var h=document.querySelector(".hero h1");if(h){h.setAttribute("tabindex","-1");h.focus({preventScroll:true});}},fast?400:2000);
+  }
+  b.addEventListener("click",open);
+})();
+</script>
+<script>
+(function(){
+  var p=new URLSearchParams(location.search), n=(p.get("para")||"").trim().slice(0,60);
+  if(!n)return;
+  var first=n.split(/\s+/)[0];
+  var f=document.getElementById("giftFor"); f.textContent="para "+n; f.hidden=false;
+  var s=document.getElementById("saludo"); s.textContent="Hola "+first+":"; s.hidden=false;
+  var i=document.getElementById("nombre"); if(i&&!i.value)i.value=n;
+  document.title="Invitación para "+n+" · Mega PatinDay";
+})();
+</script>
+</body>
+</html>
